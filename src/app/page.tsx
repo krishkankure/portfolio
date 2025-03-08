@@ -91,7 +91,7 @@ export default function Page() {
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
+                period={education.end}
               />
             </BlurFade>
           ))}
@@ -111,6 +111,20 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="coursework">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Relevant Coursework</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.coursework.map((coursework, id) => (
+              <BlurFade key={coursework} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={coursework}>{coursework}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -123,8 +137,8 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
+                  I&apos;ve worked on a variety of projects, from machine learning models
+                   to complex web and mobile applications. Here are a few of my
                   favorites.
                 </p>
               </div>
@@ -152,7 +166,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -194,7 +208,7 @@ export default function Page() {
             </ul>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
