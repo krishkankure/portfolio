@@ -166,7 +166,7 @@ export const DATA = {
       href: "https://ucsd.edu",
       degree: "B.S. Computer Science & Mathematics",
       logoUrl: "/ucsd.jpg",
-      end: "Expected 2026",
+      end: "",
     },
 
   ],
