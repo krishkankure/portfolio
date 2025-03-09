@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "CS+Math @ University of California, San Diego. Developing high-impact software and data solutions.",
   summary:
-    "I am passionate about building scalable software products. Right now, [I am a pursuing a degree in computer science and mathematics](/#education), [working as a SWE at multiple campus organization](/#work), and [joining Atlassian this summer as an data engineering intern!](/#work).",
+    "I am passionate about building scalable software products. Right now, [I am a pursuing a degree in computer science and mathematics](/#education), [working as a SWE at multiple campus organizations](/#work), and [joining Atlassian this summer as an data engineering intern!](/#work).",
   avatarUrl: "/headshot.png",
   skills: [
     "React",
